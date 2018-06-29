@@ -1,0 +1,10 @@
+apply plugin: 'groovy'
+apply plugin: Plugin1
+
+class Plugin1 implements Plugin<Project>{
+
+    @Override
+    void apply(Project target) {
+        println('haha,this is a test000...plugin1')
+    }
+}

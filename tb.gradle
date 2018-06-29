@@ -1,0 +1,38 @@
+//方法
+int hello(msg){
+    println msg
+    return 1
+    println("hello world...")
+}
+hello("tb")
+
+//变量
+def a=1
+def b="hello"
+def c="a=$a,b=$b"
+println(c)
+
+//闭包
+def cl={int i,String s -> println "$i...${s}"}
+println cl(1,"haha")
+
+//list
+def li=[]
+def emLi=[1,"2",true,66]
+emLi[0]=2.6
+emLi<<500
+println(emLi.get(0))
+println(emLi[1])
+println(emLi[2])
+println(emLi[3])
+println(emLi[4])
+emLi.each { value -> println("value is $value")}
+emLi.eachWithIndex { entry, index -> println("index is $index,value is $entry")}
+
+//map
+def map=[:]
+def emMap=["id":123,"key":"tb","isBoy":true]
+println(emMap["id"])
+println(emMap.key)
+emMap.each {println("$it.key=$it.value")}
+emMap.eachWithIndex { entry, index -> println("key is $entry.key,value is $entry.value,index is $index") }
