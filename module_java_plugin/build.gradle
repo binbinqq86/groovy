@@ -20,6 +20,7 @@ uploadArchives{
 
 gradlePlugin {
     plugins {
+        //此处名字可以随意，下面指定插件id和具体类名
         javaPlugin {
             id = 'com.tb.tb-plugin'
             implementationClass = 'com.tb.plugin.TbJavaPlugin'
