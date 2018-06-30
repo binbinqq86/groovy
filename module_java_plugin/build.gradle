@@ -1,0 +1,28 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+apply plugin: 'maven'
+repositories {
+    mavenCentral()
+}
+
+group='com.tb.plugin'
+version='1.0.0'
+archivesBaseName='java-plugin'
+
+uploadArchives{
+    repositories {
+        mavenDeployer{
+            repository(url: uri('../tbModulePlugin'))
+        }
+    }
+}
+
+gradlePlugin {
+    plugins {
+        javaPlugin {
+            id = 'com.tb.tb-plugin'
+            implementationClass = 'com.tb.plugin.TbJavaPlugin'
+        }
+    }
+}

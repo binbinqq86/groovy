@@ -32,6 +32,7 @@ buildscript {
 //        classpath files('./jarPlugin-1.0.0.jar')
         classpath "com.tb.plugin:single.plugin:1.0.0"
         classpath 'com.tb.plugin:module-plugin:1.0.0'
+        classpath 'com.tb.plugin:java-plugin:1.0.0'
 
     }
 }
@@ -51,6 +52,10 @@ apply plugin: 'com.tb.plugin-buildSrc'
 
 //5.工程内module的插件*************
 apply plugin: 'com.tb.plugin.module'
+
+//6.java plugin
+apply plugin: 'com.tb.tb-plugin'
+
 
 
 allprojects {
