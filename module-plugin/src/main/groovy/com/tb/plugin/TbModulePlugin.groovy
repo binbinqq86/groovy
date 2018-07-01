@@ -7,6 +7,6 @@ class TbModulePlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println("this is a module plugin...")
+        println("this is a groovy plugin...")
     }
 }

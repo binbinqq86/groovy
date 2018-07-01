@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>groovy</groupId>
-  <artifactId>module_java_plugin</artifactId>
+  <groupId>com.tb.plugin</groupId>
+  <artifactId>kotlin-plugin</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>
-      <version>unspecified</version>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20180630085226</lastUpdated>
+    <lastUpdated>20180701085555</lastUpdated>
   </versioning>
 </metadata>

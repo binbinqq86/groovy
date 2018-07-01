@@ -5,6 +5,6 @@ import org.gradle.api.Project
 
 class TbKotlinPlugin : Plugin<Project> {
     override fun apply(p0: Project?) {
-        println("this is kotlin plugin...")
+        println("this is a kotlin plugin...")
     }
 }

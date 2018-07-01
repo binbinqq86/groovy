@@ -12,11 +12,17 @@ repositories {
     mavenCentral()
 }
 
-group='com.tb.plugin'
-version='1.0.0'
-archivesBaseName='kotlin-plugin'
-
 publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.tb.plugin'
+            artifactId 'kotlin-plugin'
+            version '1.0.0'
+
+            from components.java
+        }
+    }
+
     repositories {
 //        ivy {
 //            url "../consuming/ivy-repo"
